@@ -1,0 +1,95 @@
+local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
+
+local Window = Rayfield:CreateWindow({
+   Name = "Pro Window",
+   LoadingTitle = "Welcome",
+   LoadingSubtitle = "We are preparing everything",
+   ConfigurationSaving = {
+      Enabled = true,
+      FolderName = nil, -- Create a custom folder for your hub/game
+      FileName = "ProTip"
+   },
+   Discord = {
+      Enabled = false,
+      Invite = "4NjfaTqEaG", -- The Discord invite code, do not include discord.gg/
+      RememberJoins = false -- Set this to false to make them join the discord every time they load it up
+   },
+   KeySystem = true, -- Set this to true to use our key system
+   KeySettings = {
+      Title = "Pro Script",
+      Subtitle = "Pro Key System",
+      Note = "Join the discord for key (NON-PREMIUM SCRIPT)",
+      FileName = "ProKeySystem",
+      SaveKey = true,
+      GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+      Key = "Dwksswtkwlsw"
+   }
+})
+
+local Tab = Window:CreateTab("Teleport", 6667781702) -- Title, Image
+
+local Section = Tab:CreateSection("Here you can find pro teleports :)")
+
+local Button = Tab:CreateButton({
+	Name = "Prision",
+	Callback = function()game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(926.469604, 99.9899826, 2384.8396, 0.999088526, -6.72981315e-08, 0.0426858887, 6.90861413e-08, 1, -4.04125551e-08, -0.0426858887, 4.33247216e-08, 0.999088526)
+	-- The function that takes place when the button is pressed
+	end,
+ })
+
+ local Button = Tab:CreateButton({
+	Name = "Patio",
+	Callback = function()game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(787.828308, 97.997879, 2469.06836, -0.998911738, 5.22712043e-08, -0.0466399156, 5.53357644e-08, 1, -6.4415687e-08, 0.0466399156, -6.69264466e-08, -0.998911738) 
+	-- The function that takes place when the button is pressed
+	end,
+ })
+
+ local Button = Tab:CreateButton({
+	Name = "Comisaria",
+	Callback = function()game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(826.403931, 99.9899826, 2318.7312, -0.999926805, -1.39935832e-08, -0.0121006649, -1.38643976e-08, 1, -1.07598117e-08, 0.0121006649, -1.05912559e-08, -0.999926805)
+	-- The function that takes place when the button is pressed
+	end,
+ })
+
+local Button = Tab:CreateButton({
+   Name = "escape",
+   Callback = function()game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(239.236191, 75.4679031, 2170.13525, -0.156205505, 0.114050753, 0.981117845, -1.73989689e-09, 0.993311167, -0.115468174, -0.987724602, -0.018036766, -0.155160666)
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab:CreateButton({
+	Name = "criminal base",
+	Callback = function()game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-886.476257, 94.1287613, 2056.75317, -0.00175409636, 0, -0.99999845, 0, 1, 0, 0.99999845, 0, -0.00175409636)
+	-- The function that takes place when the button is pressed
+	end,
+ })
+
+ local Tab = Window:CreateTab("Gun Giver", 6667781702) -- Title, Image
+
+local Button = Tab:CreateButton({
+   Name = "Pistol",
+   Callback = function()local A_1 = game:GetService("Workspace")["Prison_ITEMS"].giver.M9.ITEMPICKUP
+	local Event = game:GetService("Workspace").Remote.ItemHandler
+	Event:InvokeServer(A_1)
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Shotgun",
+   Callback = function()local A_1 = game:GetService("Workspace")["Prison_ITEMS"].giver["Remington 870"].ITEMPICKUP
+	local Event = game:GetService("Workspace").Remote.ItemHandler
+	Event:InvokeServer(A_1)
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "AK-47",
+   Callback = function()local A_1 = game:GetService("Workspace")["Prison_ITEMS"].giver["AK-47"].ITEMPICKUP
+	local Event = game:GetService("Workspace").Remote.ItemHandler
+	Event:InvokeServer(A_1)
+   -- The function that takes place when the button is pressed
+   end,
+})
